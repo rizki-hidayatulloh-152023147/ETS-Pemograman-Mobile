@@ -23,7 +23,7 @@ Aplikasi ini merupakan aplikasi mobile berbasis Flutter yang terdiri dari 5 menu
     - Nama mahasiswa
 - Dilengkapi dengan animasi fade-in
 
-![Splash Screen](assets/screenshots/splash.png)
+![Splash Screen](aset/screenshots/splash.png)
 
 ### 2. Dashboard dengan Bottom Navigation
 Menu utama aplikasi yang terdiri dari 5 navigasi:
@@ -33,7 +33,7 @@ Menu utama aplikasi yang terdiri dari 5 navigasi:
 - Cuaca
 - Berita
 
-![Dashboard](assets/screenshots/dashboard.png)
+![Dashboard](aset/screenshots/dashboard.png)
 
 ### 3. Halaman Biodata
 Fitur:
@@ -46,7 +46,7 @@ Fitur:
 - Tombol simpan (data tidak disimpan ke database)
 - UI/UX yang responsive dan modern
 
-![Biodata](assets/screenshots/biodata.png)
+![Biodata](aset/screenshots/biodata.png)
 
 ### 4. Halaman Kontak
 Fitur:
@@ -59,7 +59,7 @@ Fitur:
 - Data bersifat statis dari variabel
 - Tampilan card yang modern
 
-![Kontak](assets/screenshots/kontak.png)
+![Kontak](aset/screenshots/kontak.png)
 
 ### 5. Halaman Kalkulator
 Fitur operasi matematika:
@@ -73,7 +73,7 @@ Fitur operasi matematika:
 - Display hasil yang besar dan jelas
 - UI dengan warna yang intuitif
 
-![Kalkulator](assets/screenshots/kalkulator.png)
+![Kalkulator](aset/screenshots/kalkulator.png)
 
 ### 6. Halaman Cuaca
 Fitur:
@@ -88,7 +88,7 @@ Fitur:
     - Prakiraan 5 hari ke depan
 - Desain dengan gradient background yang menarik
 
-![Cuaca](assets/screenshots/cuaca.png)
+![Cuaca](aset/screenshots/cuaca.png)
 
 ### 7. Halaman Berita
 Fitur:
@@ -102,7 +102,7 @@ Fitur:
 - Tampilan card dengan layout yang responsive
 - Detail berita muncul saat card diklik
 
-![Berita](assets/screenshots/berita.png)
+![Berita](aset/screenshots/berita.png)
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -168,25 +168,25 @@ flutter run
 ## 📸 Screenshot Aplikasi
 
 ### Splash Screen
-![Splash Screen](assets/screenshots/splash.jpg)
+![Splash Screen](aset/screenshots/splash.jpg)
 
 ### Dashboard
-![Dashboard](assets/screenshots/dashboard.jpg)
+![Dashboard](aset/screenshots/dashboard.jpg)
 
 ### Halaman Biodata
-![Biodata](assets/screenshots/biodata.png)
+![Biodata](aset/screenshots/biodata.png)
 
 ### Halaman Kontak
-![Kontak](assets/screenshots/kontak.png)
+![Kontak](aset/screenshots/kontak.png)
 
 ### Halaman Kalkulator
-![Kalkulator](assets/screenshots/kalkulator.png)
+![Kalkulator](aset/screenshots/kalkulator.png)
 
 ### Halaman Cuaca
-![Cuaca](assets/screenshots/cuaca.png)
+![Cuaca](aset/screenshots/cuaca.png)
 
 ### Halaman Berita
-![Berita](assets/screenshots/berita.png)
+![Berita](aset/screenshots/berita.png)
 
 ## 📝 Catatan Pengembangan
 
