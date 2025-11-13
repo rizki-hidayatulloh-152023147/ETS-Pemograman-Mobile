@@ -77,7 +77,7 @@ class _KalkulatorFragmentState extends State<KalkulatorFragment> {
         child: ElevatedButton(
           onPressed: () => _buttonPressed(buttonText),
           style: ElevatedButton.styleFrom(
-            backgroundColor: color ?? Colors.white,
+            backgroundColor: color ?? Color(0xFF424769),
             padding: const EdgeInsets.all(24),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
@@ -89,7 +89,7 @@ class _KalkulatorFragmentState extends State<KalkulatorFragment> {
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.w500,
-              color: textColor ?? Colors.black87,
+              color: textColor ?? Colors.white,
             ),
           ),
         ),
@@ -100,7 +100,16 @@ class _KalkulatorFragmentState extends State<KalkulatorFragment> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey.shade100,
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color(0xFF2D3250),
+            Color(0xFF1A1D35),
+          ],
+        ),
+      ),
       child: Column(
         children: [
           // Display
@@ -113,6 +122,7 @@ class _KalkulatorFragmentState extends State<KalkulatorFragment> {
                 style: const TextStyle(
                   fontSize: 48,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
@@ -124,10 +134,10 @@ class _KalkulatorFragmentState extends State<KalkulatorFragment> {
             children: [
               Row(
                 children: [
-                  _buildButton('C', color: Colors.red.shade400, textColor: Colors.white),
-                  _buildButton('x²', color: Colors.blue.shade100),
-                  _buildButton('√', color: Colors.blue.shade100),
-                  _buildButton('÷', color: Colors.orange.shade400, textColor: Colors.white),
+                  _buildButton('C', color: Colors.red.shade600, textColor: Colors.white),
+                  _buildButton('x²', color: Color(0xFF5B6B9E)),
+                  _buildButton('√', color: Color(0xFF5B6B9E)),
+                  _buildButton('÷', color: Colors.orange.shade600, textColor: Colors.white),
                 ],
               ),
               Row(
@@ -135,7 +145,7 @@ class _KalkulatorFragmentState extends State<KalkulatorFragment> {
                   _buildButton('7'),
                   _buildButton('8'),
                   _buildButton('9'),
-                  _buildButton('×', color: Colors.orange.shade400, textColor: Colors.white),
+                  _buildButton('×', color: Colors.orange.shade600, textColor: Colors.white),
                 ],
               ),
               Row(
@@ -143,7 +153,7 @@ class _KalkulatorFragmentState extends State<KalkulatorFragment> {
                   _buildButton('4'),
                   _buildButton('5'),
                   _buildButton('6'),
-                  _buildButton('-', color: Colors.orange.shade400, textColor: Colors.white),
+                  _buildButton('-', color: Colors.orange.shade600, textColor: Colors.white),
                 ],
               ),
               Row(
@@ -151,14 +161,14 @@ class _KalkulatorFragmentState extends State<KalkulatorFragment> {
                   _buildButton('1'),
                   _buildButton('2'),
                   _buildButton('3'),
-                  _buildButton('+', color: Colors.orange.shade400, textColor: Colors.white),
+                  _buildButton('+', color: Colors.orange.shade600, textColor: Colors.white),
                 ],
               ),
               Row(
                 children: [
                   _buildButton('0'),
                   _buildButton('.'),
-                  _buildButton('=', color: Colors.green.shade400, textColor: Colors.white),
+                  _buildButton('=', color: Colors.green.shade600, textColor: Colors.white),
                 ],
               ),
             ],

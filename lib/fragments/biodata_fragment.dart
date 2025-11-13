@@ -53,14 +53,14 @@ class _BiodataFragmentState extends State<BiodataFragment> {
                 ],
               ),
               child: const CircleAvatar(
-                backgroundImage:AssetImage('aset/image/kasep.jpg'),
+                backgroundImage: AssetImage('aset/image/kasep.jpg'),
               ),
             ),
             const SizedBox(height: 20),
 
             // Card untuk Form
             Card(
-              color: Colors.purple,
+              color: Color(0xFF2D3250),
               elevation: 4,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
@@ -75,7 +75,7 @@ class _BiodataFragmentState extends State<BiodataFragment> {
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
-                        color: Colors.blue,
+                        color: Colors.white,
                       ),
                     ),
                     const SizedBox(height: 20),
@@ -83,11 +83,22 @@ class _BiodataFragmentState extends State<BiodataFragment> {
                     // Nama Lengkap
                     TextField(
                       controller: _nameController,
+                      style: const TextStyle(color: Colors.white),
                       decoration: InputDecoration(
                         labelText: 'Nama Lengkap',
-                        prefixIcon: const Icon(Icons.person_outline),
+                        labelStyle: const TextStyle(color: Colors.white70),
+                        prefixIcon: const Icon(Icons.person_outline, color: Colors.white70),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
+                          borderSide: const BorderSide(color: Colors.white54),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: const BorderSide(color: Colors.white54),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: const BorderSide(color: Colors.blue),
                         ),
                       ),
                     ),
@@ -96,11 +107,22 @@ class _BiodataFragmentState extends State<BiodataFragment> {
                     // Email
                     TextField(
                       controller: _emailController,
+                      style: const TextStyle(color: Colors.white),
                       decoration: InputDecoration(
                         labelText: 'Email',
-                        prefixIcon: const Icon(Icons.email_outlined),
+                        labelStyle: const TextStyle(color: Colors.white70),
+                        prefixIcon: const Icon(Icons.email_outlined, color: Colors.white70),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
+                          borderSide: const BorderSide(color: Colors.white54),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: const BorderSide(color: Colors.white54),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: const BorderSide(color: Colors.blue),
                         ),
                       ),
                     ),
@@ -112,15 +134,17 @@ class _BiodataFragmentState extends State<BiodataFragment> {
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w500,
+                        color: Colors.white,
                       ),
                     ),
                     Row(
                       children: [
                         Expanded(
                           child: RadioListTile<String>(
-                            title: const Text('Laki-laki'),
+                            title: const Text('Laki-laki', style: TextStyle(color: Colors.white)),
                             value: 'Laki-laki',
                             groupValue: _selectedGender,
+                            activeColor: Colors.blue,
                             onChanged: (value) {
                               setState(() {
                                 _selectedGender = value;
@@ -130,9 +154,10 @@ class _BiodataFragmentState extends State<BiodataFragment> {
                         ),
                         Expanded(
                           child: RadioListTile<String>(
-                            title: const Text('Perempuan'),
+                            title: const Text('Perempuan', style: TextStyle(color: Colors.white)),
                             value: 'Perempuan',
                             groupValue: _selectedGender,
+                            activeColor: Colors.blue,
                             onChanged: (value) {
                               setState(() {
                                 _selectedGender = value;
@@ -148,18 +173,30 @@ class _BiodataFragmentState extends State<BiodataFragment> {
                     DropdownButtonFormField<String>(
                       decoration: InputDecoration(
                         labelText: 'Pendidikan Terakhir',
-                        prefixIcon: const Icon(Icons.school_outlined),
+                        labelStyle: const TextStyle(color: Colors.white70),
+                        prefixIcon: const Icon(Icons.school_outlined, color: Colors.white70),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
+                          borderSide: const BorderSide(color: Colors.white54),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: const BorderSide(color: Colors.white54),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: const BorderSide(color: Colors.blue),
                         ),
                       ),
+                      style: const TextStyle(color: Colors.white),
+                      dropdownColor: Color(0xFF2D3250),
                       value: _selectedEducation,
                       items: const [
-                        DropdownMenuItem(value: 'SMA', child: Text('SMA/SMK')),
-                        DropdownMenuItem(value: 'D3', child: Text('Diploma (D3)')),
-                        DropdownMenuItem(value: 'S1', child: Text('Sarjana (S1)')),
-                        DropdownMenuItem(value: 'S2', child: Text('Magister (S2)')),
-                        DropdownMenuItem(value: 'S3', child: Text('Doktor (S3)')),
+                        DropdownMenuItem(value: 'SMA', child: Text('SMA/SMK', style: TextStyle(color: Colors.white))),
+                        DropdownMenuItem(value: 'D3', child: Text('Diploma (D3)', style: TextStyle(color: Colors.white))),
+                        DropdownMenuItem(value: 'S1', child: Text('Sarjana (S1)', style: TextStyle(color: Colors.white))),
+                        DropdownMenuItem(value: 'S2', child: Text('Magister (S2)', style: TextStyle(color: Colors.white))),
+                        DropdownMenuItem(value: 'S3', child: Text('Doktor (S3)', style: TextStyle(color: Colors.white))),
                       ],
                       onChanged: (value) {
                         setState(() {
@@ -175,9 +212,19 @@ class _BiodataFragmentState extends State<BiodataFragment> {
                       child: InputDecorator(
                         decoration: InputDecoration(
                           labelText: 'Tanggal Lahir',
-                          prefixIcon: const Icon(Icons.calendar_today),
+                          labelStyle: const TextStyle(color: Colors.white70),
+                          prefixIcon: const Icon(Icons.calendar_today, color: Colors.white70),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
+                            borderSide: const BorderSide(color: Colors.white54),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: const BorderSide(color: Colors.white54),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: const BorderSide(color: Colors.blue),
                           ),
                         ),
                         child: Text(
@@ -185,7 +232,7 @@ class _BiodataFragmentState extends State<BiodataFragment> {
                               ? 'Pilih tanggal'
                               : '${_selectedDate!.day}/${_selectedDate!.month}/${_selectedDate!.year}',
                           style: TextStyle(
-                            color: _selectedDate == null ? Colors.grey : Colors.black,
+                            color: _selectedDate == null ? Colors.white54 : Colors.white,
                           ),
                         ),
                       ),
@@ -205,7 +252,7 @@ class _BiodataFragmentState extends State<BiodataFragment> {
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.blue.shade700,
+                          backgroundColor: Colors.deepPurple,
                           padding: const EdgeInsets.symmetric(vertical: 15),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),

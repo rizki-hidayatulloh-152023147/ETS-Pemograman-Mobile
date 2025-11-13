@@ -11,8 +11,8 @@ class CuacaFragment extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Colors.blue.shade400,
-            Colors.blue.shade700,
+            Color(0xFF2D3250),
+            Color(0xFF1A1D35),
           ],
         ),
       ),
@@ -46,7 +46,7 @@ class CuacaFragment extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withOpacity(0.1),
                 ),
                 child: const Icon(
                   Icons.wb_sunny,
@@ -79,7 +79,7 @@ class CuacaFragment extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Column(
@@ -124,7 +124,7 @@ class CuacaFragment extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Column(

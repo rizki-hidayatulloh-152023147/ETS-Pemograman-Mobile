@@ -27,23 +27,23 @@ class KontakFragment extends StatelessWidget {
       Contact(name: 'keza cegil', phone: '0823-3456-7890', color: Colors.deepOrange),
       Contact(name: 'ilham kalcer', phone: '0824-4567-8901', color: Colors.lime),
       Contact(name: 'bah firja', phone: '0825-5678-9012', color: Colors.brown),
-      
     ];
 
     return Column(
       children: [
         Container(
           padding: const EdgeInsets.all(16),
-          color: Colors.blue.shade50,
+          color: Colors.deepPurple,
           child: Row(
             children: [
-              const Icon(Icons.contacts, color: Colors.blue),
+              const Icon(Icons.contacts, color: Colors.white),
               const SizedBox(width: 10),
               Text(
                 'Daftar Kontak (${contacts.length})',
                 style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
               ),
             ],
@@ -55,6 +55,7 @@ class KontakFragment extends StatelessWidget {
             itemBuilder: (context, index) {
               final contact = contacts[index];
               return Card(
+                color: Color(0xFF2D3250),
                 margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 elevation: 2,
                 child: ListTile(
@@ -74,13 +75,17 @@ class KontakFragment extends StatelessWidget {
                     style: const TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: 16,
+                      color: Colors.white,
                     ),
                   ),
                   subtitle: Row(
                     children: [
-                      const Icon(Icons.phone, size: 14, color: Colors.grey),
+                      const Icon(Icons.phone, size: 14, color: Colors.white70),
                       const SizedBox(width: 5),
-                      Text(contact.phone),
+                      Text(
+                        contact.phone,
+                        style: const TextStyle(color: Colors.white70),
+                      ),
                     ],
                   ),
                   trailing: IconButton(
