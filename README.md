@@ -4,7 +4,7 @@
 
 - **Nama**: Rizki Hidayatulloh
 - **NIM**: 152023147
-- **Kelas**: AA
+- **Kelas**: BB
 - **Dosen**: Galih Ashari R., S.Si., MT
 - **Semester**: Ganjil 2025/2026
 
