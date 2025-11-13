@@ -77,7 +77,7 @@ Fitur operasi matematika:
 
 ### 6. Halaman Cuaca
 Fitur:
-- Informasi cuaca statis untuk kota Bandung
+- Informasi cuaca statis untuk jakarta
 - Menampilkan:
     - Suhu saat ini
     - Kondisi cuaca dengan icon
@@ -121,23 +121,24 @@ lib/
 ├── screens/
 │   ├── splash_screen.dart
 │   └── dashboard_screen.dart
-├── fragments/
-│   ├── biodata_fragment.dart
-│   ├── kontak_fragment.dart
-│   ├── kalkulator_fragment.dart
-│   ├── cuaca_fragment.dart
-│   └── berita_fragment.dart
+└── fragments/
+    ├── biodata_fragment.dart
+    ├── kontak_fragment.dart
+    ├── kalkulator_fragment.dart
+    ├── cuaca_fragment.dart
+    └── berita_fragment.dart
 
 aset/
-└── image/
-    └── kasep.jpg
-└── screensshots
-    └──berita.png
-    └──biodata.png
-    └──cuaca.png
-    └──kalkulator.png
-    └──kontak.png
-    └──spalsh.png
+├── image/
+│   └── kasep.jpg
+└── screenshots/
+    ├── berita.png
+    ├── biodata.png
+    ├── cuaca.png
+    ├── kalkulator.png
+    ├── kontak.png
+    └── splash.png
+```
 
 ## 🚀 Cara Menjalankan Aplikasi
 
@@ -168,10 +169,10 @@ flutter run
 ## 📸 Screenshot Aplikasi
 
 ### Splash Screen
-![Splash Screen](aset/screenshots/splash.jpg)
+![Splash Screen](aset/screenshots/splash.png)
 
 ### Dashboard
-![Dashboard](aset/screenshots/dashboard.jpg)
+![Dashboard](aset/screenshots/dashboard.png)
 
 ### Halaman Biodata
 ![Biodata](aset/screenshots/biodata.png)
@@ -212,7 +213,7 @@ Fitur yang dapat dikembangkan:
 
 ## 👨‍💻 Developer
 
-Dikembangkan oleh **Arvin Kurniawan** untuk memenuhi tugas UTS Pemrograman Mobile.
+Dikembangkan oleh **Rizki Hidayatulloh** untuk memenuhi tugas UTS Pemrograman Mobile.
 
 ## 📄 Lisensi
 
